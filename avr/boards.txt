@@ -1,0 +1,83 @@
+menu.cpu=Processor
+
+
+rrnano.name=KAI NANO 
+
+rrnano.upload.tool=avrdude
+rrnano.upload.protocol=arduino
+
+rrnano.bootloader.tool=avrdude
+rrnano.bootloader.unlock_bits=0x3F
+rrnano.bootloader.lock_bits=0x0F
+
+rrnano.build.f_cpu=16000000L
+rrnano.build.board=AVR_RoninCore
+rrnano.build.core=arduino
+
+
+## KAI NANO w/ ATmega328PB
+## --------------------------
+rrnano.menu.cpu.atmega328pb=ATMega328PB
+
+rrnano.menu.cpu.atmega328pb.upload.maximum_size=32256
+rrnano.menu.cpu.atmega328pb.upload.maximum_data_size=2048
+rrnano.menu.cpu.atmega328pb.upload.speed=115200
+
+rrnano.menu.cpu.atmega328pb.bootloader.low_fuses=0xFF
+rrnano.menu.cpu.atmega328pb.bootloader.high_fuses=0xD6
+rrnano.menu.cpu.atmega328pb.bootloader.extended_fuses=0xF5
+rrnano.menu.cpu.atmega328pb.bootloader.file=optiboot/atmega328pb/optiboot_flash_atmega328pb_UART0_115200_16000000L.hex
+
+rrnano.menu.cpu.atmega328pb.build.mcu=atmega328pb
+rrnano.menu.cpu.atmega328pb.build.variant=pb-variant
+
+rrnano.menu.cpu.atmega328pb.build.core=MiniCore_corefiles
+rrnano.menu.cpu.atmega328pb.build.board=AVR_ATmega328
+
+
+rrnano.menu.cpu.atmega328pb.compiler.c.extra_flags=-Wextra -flto -g
+rrnano.menu.cpu.atmega328pb.compiler.c.elf.extra_flags=-w -flto -g 
+rrnano.menu.cpu.atmega328pb.compiler.cpp.extra_flags=-Wextra -flto -g
+rrnano.menu.cpu.atmega328pb.ltoarcmd=avr-gcc-ar
+
+###############################################################################
+
+rrbit.name=KAI bit
+
+rrbit.upload.tool=avrdude
+rrbit.upload.protocol=arduino
+
+rrbit.bootloader.tool=avrdude
+rrbit.bootloader.unlock_bits=0x3F
+rrbit.bootloader.lock_bits=0x0F
+
+rrbit.build.f_cpu=16000000L
+rrbit.build.board=AVR_RoninCore
+rrbit.build.core=arduino
+
+
+## KAI bit w/ ATmega328PB
+## --------------------------
+rrbit.menu.cpu.atmega328pb=ATMega328PB
+
+rrbit.menu.cpu.atmega328pb.upload.maximum_size=32256
+rrbit.menu.cpu.atmega328pb.upload.maximum_data_size=2048
+rrbit.menu.cpu.atmega328pb.upload.speed=115200
+
+rrbit.menu.cpu.atmega328pb.bootloader.low_fuses=0xFF
+rrbit.menu.cpu.atmega328pb.bootloader.high_fuses=0xD6
+rrbit.menu.cpu.atmega328pb.bootloader.extended_fuses=0xF5
+rrbit.menu.cpu.atmega328pb.bootloader.file=optiboot/atmega328pb/optiboot_flash_atmega328pb_UART0_115200_16000000L.hex
+
+rrbit.menu.cpu.atmega328pb.build.mcu=atmega328pb
+rrbit.menu.cpu.atmega328pb.build.variant=pb-variant
+
+rrbit.menu.cpu.atmega328pb.build.core=MiniCore_corefiles
+rrbit.menu.cpu.atmega328pb.build.board=AVR_ATmega328
+
+
+rrbit.menu.cpu.atmega328pb.compiler.c.extra_flags=-Wextra -flto -g
+rrbit.menu.cpu.atmega328pb.compiler.c.elf.extra_flags=-w -flto -g 
+rrbit.menu.cpu.atmega328pb.compiler.cpp.extra_flags=-Wextra -flto -g
+rrbit.menu.cpu.atmega328pb.ltoarcmd=avr-gcc-ar
+
