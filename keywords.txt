@@ -1,0 +1,15 @@
+######################################## Syntax Coloring Map For KAIpro ######################################
+######################################## Datatypes (KEYWORD1) ####################################### 
+KAIpro	KEYWORD1 
+######################################## Methods and Functions (KEYWORD2)####################################### 
+
+numberWrite	KEYWORD2
+driveDiff	KEYWORD2
+ledWrite	KEYWORD2
+driveDC	    KEYWORD2
+buzzer		KEYWORD2
+buzzerDelay		KEYWORD2 
+brake		KEYWORD2
+intro		KEYWORD2
+######################################## Constants (LITERAL1) #######################################
+
